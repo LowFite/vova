@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Курс JavaScript</title>
+</head>
+		
+<body>
+	
+	<header>
+		<h1 align="center">Введение в JavaScript</h1>
+	</header>	
+	<center>
+	<div class="content">
+		<script>
+			let teacher = {
+				surname: 'Карамзин',
+				name: 'Виктор',
+				patronymic: 'Генадьевич',
+				occupation: 'Преподаватель специальных дисциплин',
+				degree: 'Высшее',
+				category: 'Первая',
+				education: 'Московский государственный институт электронной техники',
+				discipline: 'Информатика',
+				note: 'прочее'
+			};
+
+			let line = `
+				<b><h2>${teacher.surname} ${teacher.name} ${teacher.patronymic}</h2></b>
+				<p><i>Должность:</i> ${teacher.occupation}</p>
+				<p><i>Уровень образования:</i> ${teacher.degree}</p>
+				<p><i>Категория:</i> ${teacher.category}</p>
+				<p><i>Образование:</i> ${teacher.education}</p>
+				<p><i>Преподаваемая дисциплина:</i> ${teacher.discipline}</p>
+				<p>${teacher.note}</p>
+			`;
+			
+			document.write(line);
+		</script>
+	</div>
+	</center>
+	<footer align="center">
+		<h3>Добро пожаловать на pechora_PROger</h3>
+		<a href="https://vk.com/pechora_proger" target="__blank">pechora_PROger</a>
+	</footer>
+
+</body>
+</html>
